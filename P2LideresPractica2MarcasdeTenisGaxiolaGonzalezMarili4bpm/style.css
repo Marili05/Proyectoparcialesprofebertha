@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bad+Script&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+  /*fuentes*/
+  --fuenteSecundaria: sans-serif;
+  --fuentePrimaria: 'Aclonica';
+  /*clores*/
+  --colorRosaFuerte: #ffabc6;
+  --colorRosaNormal: #ffc0d4;
+  --colorRosaBajito: #ffd5e2;
+  --colorBlanco: #ffffff;
+  --colorAzulcomplementario: #5fb1ff;
+  --H1Predeterminado: clamp(3rem, 0.143rem + 6.619vw, 7rem);
+  --h2Predeterminado: clamp(2rem, 0.571rem + 3.81vw, 4rem);
+  --pPredeterminado: clamp(1rem, 0.5rem + 1.333vw, 1.7rem);
+  --rotarTitulo: rotate(180deg);
+  
+}
+.contpresentacion{
+   display: flex;
+   justify-content: space-between;
+}
+.sectionnav{
+    display: flex;
+    justify-content: end;
+}
+.navbar{
+    --_background: var(--colorBlanco);
+    border-bottom: 2px solid var(--_background);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.enlace{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    position: relative;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    font-family: var(--fuenteSecundaria);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.enlace:hover::before,
+.enlace:hover::after{
+  opacity: 1;
+  transform: translate(0);
+  transition: all 0.5s ease;
+  transition-duration: .7s;
+  transform-origin: center;
+  transform: scale(1.2);
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+}
+.enlace::before{
+  transition: all 0.5s ease;
+  content: "";
+  box-shadow: #fff  3px 3px inset;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translate(-30px);
+  transform-origin: center;
+  transition-duration: .7s;
+  -webkit-transform: translate(-30px);
+  -moz-transform: translate(-30px);
+  -ms-transform: translate(-30px);
+  -o-transform: translate(-30px);
+}
+.enlace::after{
+  transition: all 0.5s ease;
+  content: "";
+  box-shadow: #fff  3px 3px ;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transform: translate(30px);
+  transition-duration: .7s;
+  transform-origin: center;
+  -webkit-transform: translate(30px);
+  -moz-transform: translate(30px);
+  -ms-transform: translate(30px);
+  -o-transform: translate(30px);
+}
+
+.textprin{
+    font-family: var(--fuentePrimaria);
+    color: #fff;
+    text-shadow: #edb1f1 3px 3px;
+
+}
+
+.aside{
+    margin: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+h2.sublist{
+    font-size: 30px;
+    color: #9896f1;
+   
+}
+ol{
+    list-style:  none;
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+}
+li{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #757575;
+}
+
+/*pagina de asics**/
+.bodasics{
+    background: #fff;
+}
+/* .navbar.navasics{
+    background: #068ded;
+}
+.enlace.enasics{
+    color: #fff;
+}
+.enasics:hover{
+    box-shadow: #fff  3px 3px ;
+} */
+.card{
+  display: flex;align-items: center;
+  gap: 200px;
+  justify-content: space-around;
+    margin: 10px 0 0 20px;
+    border-radius: 20px;
+    width: 650px;
+    height: 550px;
+}
+.contentcard{
+    width: 500px;
+    height: 500px;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.parrafos{
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+h3.subasic{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 25px;
+}
+
+
+/*PRueba d tabla**/
+.table-container {
+    margin: 25px 10px;
+    max-width: 500px;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .tableasic {
+    background-color: #068ded;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  tbody tr {
+    animation: slideInFromLeft 0.5s ease;
+  }
+
+
+  .titwilson.titpuma{
+    color: #f7e467;
+  }
+  .titwilson.titasics{
+    color: #068ded;
+  }
+
+  /*codigos de el fondito*/
+  body{
+    background: rgb(255,192,212);
+    background: linear-gradient(90deg, rgba(255,192,212,1) 15%, rgba(95,177,255,1) 100%);
+  }
+  .sect-tenis{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .presentacionProducto{
+    margin: 15px;
+    display: flex;
+    gap: -100px;
+    align-items: center;
+  }
+  .h1{
+    font-size: clamp(3rem, 0.143rem + 6.619vw, 7rem);
+    font-family: var(--fuentePrimaria);
+    color: #ffffff;
+    position: relative;
+  }
+  .h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 40%;
+    height: 20%;
+    text-decoration:  underline;
+    background: rgba(6, 141, 237, 0.5);
+    z-index: -1;
+  }
+  /* div.cont-img1{
+    background: url('./img/zapatilla.png');
+    width: 340px;
+    height: 315px;
+  }
+    */
+  main.main{
+    width: 80%;
+    height: 87%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    
+  }
+
+  .cont-img1 {
+    width: 440px;
+    margin:  0 20px;
+    height: 345px;
+    position: relative; /* Para ocultar parte del reflejo que se extiende más allá del contenedor */
+}
+.imgblob{
+  width: 80%;
+  height: 90%;
+}
+
+.cont-img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/*nike*/
+.imgnike{
+  width: 440px;
+  height: 360px;
+}
+
+/*Paginas nuevo diseñoo*/
+.cont-diseno{
+  margin: 20px;
+  display: flex;
+  gap: 4%;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+}
+.div-infohistoria{
+  background: rgba(255, 255, 255, 0.5) ;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+.texto-historia{
+  width: 75%;
+  font-family: var(--fuenteSecundaria);
+}
+.h2acercad{
+  line-height: 1.5;
+  font-size: clamp(1.5rem, 0.607rem + 2.181vw, 3.75rem);
+  color: var(--colorBlanco);
+  font-family: var(--fuentePrimaria);
+}
+.cont-imgnv{
+  /* background: #f9f9f9;
+  border-radius: 15%; */
+  padding: 45px 20px;
+  position: relative;
+  background: url("./img/imgsinbgpuma.png");
+  background-position: center;
+  background-size: cover;
+}
+.cont-imgnv::before{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 115%;
+  top: 0;
+  left: -10%;
+  border-right: 2px solid var(--colorRosaFuerte); 
+  
+}
+.imgdisenonv{
+  width: 25rem;
+  height: 20rem;
+}
+.conttitpgs{
+  color: #ffffff;
+  writing-mode:vertical-lr;
+  transform: var(--rotarTitulo);
+  -webkit-writing-mode:vertical-lr;
+  -ms-writing-mode:vertical-lr;
+
+}
+.tituloPaginas{
+  font-size: var(--H1Predeterminado);
+  font-family: var(--fuentePrimaria);
+  -webkit-text-stroke: 1px#ffffff;
+  color: transparent;
+  writing-mode:vertical-lr;
+  -webkit-writing-mode:vertical-lr;
+  -ms-writing-mode:vertical-lr;
+
+}
+.spanfrase{
+  font-size: 25px;
+  font-family: var(--fuenteSecundaria);
+}
+.asideasics{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tablepuma{
+  background: var(--colorRosaNormal);
+}
+.imgdisenonv.imgsbg{
+  background: transparent;
+}
+/*toogle*/
