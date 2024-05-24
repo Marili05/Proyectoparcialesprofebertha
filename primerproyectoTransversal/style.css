@@ -1,0 +1,122 @@
+/*variables*/
+:root{
+    --fontPrincipal: 'DM Mono';
+    --fontSecundaria:  'Open Sans', sans-serif;
+    --colorPrimario: #FF9800;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* section nav*/
+.section-nav{
+    width: auto;
+    width: 97vw;
+    margin: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 800px; *//*A la bestia pa' que tanto*/
+}
+.nav{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+a.section-nav__enlaces{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: var(--fontSecundaria);
+}
+.section-nav__imgpuntits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*main*/
+.main-principal{
+    margin: 50px;
+}
+/*section 1*/
+.sect-fraseimg{
+    width: calc(100vw - 100px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    padding: 3% 0;
+}
+.div-frase{
+    margin: 20px 25px;
+    font-size: 5ch;
+    font-family: var(--fontPrincipal);
+}
+
+.div-svg1{
+    width: 40%;
+}
+.div-svg1 svg{
+    width: 100%;
+}
+.autor-frase{
+    font-size: 16px;
+}
+/*section 2*/
+.sect-madeby{
+    width: calc(100vw - 100px);
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    gap:20%;
+}
+
+.svg-2person{
+    width: 50vw;
+}
+
+.svg-2person svg{
+    width: 100%;
+}
+/*footer*/
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background: var(--colorPrimario);
+    padding: 2%;
+    gap: 20px;
+}
+/*footer xd*/
+.footer-infoesc__logocetis{
+    width: 10%;
+    overflow: hidden;
+}
+
+.footer-infoesc__logocetis img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.footer-infoesc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1767px){
+    .div-svg1{
+        width: 60%;
+    }
+
+    .svg-2person{
+        width: 60vw;
+    }
+}
